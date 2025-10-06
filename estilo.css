@@ -1,0 +1,35 @@
+/* Fondo */
+body{ background-color: bisque; }
+/* Encabezado */
+h1{ text-align: center; }
+/* Tabla */
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+th,td{
+    padding: 10px;
+    border: solid #444444;
+    text-align: center;
+}
+/* Días */
+th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04aa6d;
+}
+/* Horas */
+tr>td:first-child{ background-color: #c7d2d2; }
+
+/* Módulos */
+td{ background-color: white; }
+
+/* Ajustes */
+th:first-child{
+    border:none;
+    background-color: bisque;
+}
+
+tr:nth-child(4){ color: blue; }
