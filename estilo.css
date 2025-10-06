@@ -1,89 +1,35 @@
-/* ==============================
-   Estilo Real Madrid
-   ============================== */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background: url('https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg') no-repeat center fixed;
-  background-size: 50%;
-  background-color: #ffffff;
-  color: #00205b; /* Azul Real Madrid */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+/* Fondo */
+body{ background-color: bisque; }
+/* Encabezado */
+h1{ text-align: center; }
+/* Tabla */
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
 }
-
-.container {
-  backdrop-filter: blur(6px);
-  background-color: rgba(255, 255, 255, 0.85);
-  border: 2px solid #d4af37; /* Dorado */
-  border-radius: 20px;
-  padding: 30px 50px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+th,td{
+    padding: 10px;
+    border: solid #444444;
+    text-align: center;
 }
+/* Días */
+th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04aa6d;
+}
+/* Horas */
+tr>td:first-child{ background-color: #c7d2d2; }
 
-h1 {
-  text-align: center;
-  color: #d4af37;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+/* Módulos */
+td{ background-color: white; }
+
+/* Ajustes */
+th:first-child{
+    border:none;
+    background-color: bisque;
 }
 
-table {
-  border-collapse: collapse;
-  width: 100%;
-  overflow: hidden;
-  border-radius: 12px;
-}
-
-th, td {
-  border: 1px solid #d4af37;
-  padding: 12px 18px;
-  text-align: center;
-  transition: all 0.3s ease;
-}
-
-th {
-  background-color: #00205b;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-td {
-  background-color: rgba(255,255,255,0.95);
-}
-
-/* Hover solo para la celda */
-td:hover {
-  background-color: #d4af37;
-  color: white;
-  transform: scale(1.05);
-  cursor: pointer;
-  box-shadow: 0 0 10px rgba(212,175,55,0.5);
-}
-
-/* Hover para las cabeceras */
-th:hover {
-  background-color: #d4af37;
-  color: #00205b;
-}
-
-/* Bordes redondeados sutiles */
-table tr:first-child th:first-child {
-  border-top-left-radius: 12px;
-}
-table tr:first-child th:last-child {
-  border-top-right-radius: 12px;
-}
-table tr:last-child td:first-child {
-  border-bottom-left-radius: 12px;
-}
-table tr:last-child td:last-child {
-  border-bottom-right-radius: 12px;
-}
+tr:nth-child(4){ color: blue; }
